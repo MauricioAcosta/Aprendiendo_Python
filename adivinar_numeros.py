@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 import random
 def run():
+    print("Bienvenido al juego adivina el numero aleatorio :D")
+    number_end=int(raw_input("Hasta cual numero aleatorio quieres jugar: "))
     number_found = False
-    random_number = random.randint(0, 20)
-
+    random_number = random.randint(0, number_end)
     while not number_found:
         number = int(raw_input("Intenta un numero: "))
         if number == random_number:
