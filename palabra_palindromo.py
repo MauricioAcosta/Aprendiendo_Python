@@ -1,19 +1,19 @@
 # -*- coding utf-8 -*-
 
-def palindrome2(word):
+def palindrome2(word):#forma alternativa
     reversed_letters = []
 
     for letter in word:
         reversed_letters.insert(0,letter)
     reversed_word=''.join(reversed_letters)
-    if reversed_word==word:
+    if reversed_word == word:
         return True
     else:
         return False
 
-def palindrome(word):
+def palindrome(word):#Una mejor forma y mas facil
     reversed_word = word[::-1]
-    if reversed_word==word:
+    if reversed_word == word:
         return True
     else:
         return False
