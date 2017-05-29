@@ -1,5 +1,16 @@
 # -*- coding utf-8 -*-
 
+def palindrome2(word):
+    reversed_letters = []
+
+    for letter in word:
+        reversed_letters.insert(0,letter)
+    reversed_word=''.join(reversed_letters)
+    if reversed_word==word:
+        return True
+    else:
+        return False
+
 def palindrome(word):
     reversed_word = word[::-1]
     if reversed_word==word:
