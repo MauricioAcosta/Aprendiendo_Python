@@ -9,7 +9,7 @@ def binary_search(numbers, number_to_find, low, high):
         return True
 
     elif numbers[mid] > number_to_find:
-        return binary_search(numbers, number_to_find, low,mid-1)
+        return binary_search(numbers, number_to_find, low, mid-1)
 
     else:
         return binary_search(numbers, number_to_find, mid+1, high)
