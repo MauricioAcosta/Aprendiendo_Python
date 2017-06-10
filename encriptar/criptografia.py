@@ -71,7 +71,18 @@ KEYS = {
 }
 
 def cypher(message):
-    pass
+    words = message.split(' ')
+    cypher_messager = []
+
+    for word in words:
+        cypher_word = ''
+        for letter in word:
+            cypher_word += KEYS[letter]
+
+        cypher_messager.append(cypher_word)
+
+    return ' '.join(cypher_messager)
+
 
 def decipher(message):
     pass
@@ -87,7 +98,9 @@ def run():
             [s]alir
         '''))
         if command == 'c':
-            print('cifrar')
+            message = str(raw_input('Escribe tu mensaje: '))
+            cypher_messager = cypher(message)
+            print(cypher_messager)
         elif command == 'd':
             print('decifrar')
         elif command == 's':
