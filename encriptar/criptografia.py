@@ -85,7 +85,20 @@ def cypher(message):
 
 
 def decipher(message):
-    pass
+
+    words = message.split(' ')
+    decipher_message = []
+
+    for word in words:
+        decipher_word = ''
+
+        for letter in word:
+
+            for key,value in KEYS.iteritems():
+                if value == letter:
+                    decipher_word += key
+        decipher_message.append(decipher_word)
+    return ' '.join(decipher_message)
 
 def run():
     while True:
@@ -102,9 +115,12 @@ def run():
             cypher_messager = cypher(message)
             print(cypher_messager)
         elif command == 'd':
-            print('decifrar')
+            message = str(raw_input('Escribe tu mensaje cifrado: '))
+            decypher_message = decipher(message)
+            print(decypher_message)
         elif command == 's':
-            print('salir')
+            print('¡Adios!')
+            break
         else:
             print('¡Comando no encontrado!')
 
