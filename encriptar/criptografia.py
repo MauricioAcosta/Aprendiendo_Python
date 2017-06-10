@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*
 
 KEYS = {
@@ -77,7 +78,7 @@ def decipher(message):
 
 def run():
     while True:
-        command = str(= raw_input('''--- * --- * --- * --- * --- * ---* --- * ---
+        command = str(raw_input('''--- * --- * --- * --- * --- * ---* --- * ---
 
             Bienvenido a criptografia. ¿Qué deseas hacer?
 
