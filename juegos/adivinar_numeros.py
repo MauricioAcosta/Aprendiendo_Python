@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python
 import random
 def run():
     print("Bienvenido al juego adivina el numero aleatorio :D")

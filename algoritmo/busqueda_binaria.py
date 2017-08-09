@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python
 def binary_search(numbers, number_to_find, low, high):
 
     if low > high:
